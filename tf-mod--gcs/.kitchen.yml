@@ -1,0 +1,21 @@
+---
+  driver: 
+    name: terraform
+    root_module_directory: test/fixtures/tf_module
+
+  provisioner: 
+    name: teraform
+
+  verifier:
+    name : terraform
+    groups: 
+      - name: default
+        controls: 
+          - gcs
+
+  suites: 
+    - name : kt_suite
+  
+  platforms:
+    - name : terraform
+      

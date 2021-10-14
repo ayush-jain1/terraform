@@ -1,0 +1,65 @@
+E, [2021-10-14T14:31:56.478752 #68597] ERROR -- Kitchen: ------Exception-------
+E, [2021-10-14T14:31:56.478823 #68597] ERROR -- Kitchen: Class: Kitchen::ClientError
+E, [2021-10-14T14:31:56.478843 #68597] ERROR -- Kitchen: Message: Could not load the 'terraform' driver from the load path. Did you mean: dummy, exec, proxy, ssh_base ? Please ensure that your driver is installed as a gem or included in your Gemfile if using Bundler.
+E, [2021-10-14T14:31:56.478858 #68597] ERROR -- Kitchen: ----------------------
+E, [2021-10-14T14:31:56.478870 #68597] ERROR -- Kitchen: ------Backtrace-------
+E, [2021-10-14T14:31:56.478882 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/plugin.rb:55:in `rescue in load'
+E, [2021-10-14T14:31:56.478895 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/plugin.rb:33:in `load'
+E, [2021-10-14T14:31:56.478908 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/driver.rb:37:in `for_plugin'
+E, [2021-10-14T14:31:56.478920 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:235:in `new_driver'
+E, [2021-10-14T14:31:56.478932 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:250:in `new_instance'
+E, [2021-10-14T14:31:56.478944 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:143:in `block in build_instances'
+E, [2021-10-14T14:31:56.478956 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:142:in `map'
+E, [2021-10-14T14:31:56.478968 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:142:in `with_index'
+E, [2021-10-14T14:31:56.478980 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:142:in `build_instances'
+E, [2021-10-14T14:31:56.478992 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:116:in `instances'
+E, [2021-10-14T14:31:56.479004 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/command.rb:109:in `filtered_instances'
+E, [2021-10-14T14:31:56.479016 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/command.rb:139:in `parse_subcommand'
+E, [2021-10-14T14:31:56.479028 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/command/list.rb:29:in `call'
+E, [2021-10-14T14:31:56.479040 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/cli.rb:52:in `perform'
+E, [2021-10-14T14:31:56.479052 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/cli.rb:120:in `list'
+E, [2021-10-14T14:31:56.479064 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/thor-1.1.0/lib/thor/command.rb:27:in `run'
+E, [2021-10-14T14:31:56.479076 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/thor-1.1.0/lib/thor/invocation.rb:127:in `invoke_command'
+E, [2021-10-14T14:31:56.479089 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/thor-1.1.0/lib/thor.rb:392:in `dispatch'
+E, [2021-10-14T14:31:56.479102 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/thor-1.1.0/lib/thor/base.rb:485:in `start'
+E, [2021-10-14T14:31:56.479115 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/bin/kitchen:11:in `block in <top (required)>'
+E, [2021-10-14T14:31:56.479128 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/errors.rb:170:in `with_friendly_errors'
+E, [2021-10-14T14:31:56.479140 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/bin/kitchen:11:in `<top (required)>'
+E, [2021-10-14T14:31:56.479152 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/bin/kitchen:25:in `load'
+E, [2021-10-14T14:31:56.479176 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/bin/kitchen:25:in `<main>'
+E, [2021-10-14T14:31:56.479189 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/bin/ruby_executable_hooks:22:in `eval'
+E, [2021-10-14T14:31:56.479202 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/bin/ruby_executable_hooks:22:in `<main>'
+E, [2021-10-14T14:31:56.479214 #68597] ERROR -- Kitchen: ----End Backtrace-----
+E, [2021-10-14T14:31:56.479225 #68597] ERROR -- Kitchen: ---Nested Exception---
+E, [2021-10-14T14:31:56.479236 #68597] ERROR -- Kitchen: Class: Gem::MissingSpecError
+E, [2021-10-14T14:31:56.479248 #68597] ERROR -- Kitchen: Message: Could not find 'delegate' (~> 0.1.0) among 252 total gem(s)
+Checked in 'GEM_PATH=/Users/ayujain5/.rvm/gems/ruby-2.7.1:/Users/ayujain5/.rvm/rubies/ruby-2.7.1/lib/ruby/gems/2.7.0', execute `gem env` for more information
+E, [2021-10-14T14:31:56.479260 #68597] ERROR -- Kitchen: ----------------------
+E, [2021-10-14T14:31:56.479271 #68597] ERROR -- Kitchen: ------Backtrace-------
+E, [2021-10-14T14:31:56.479283 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/plugin.rb:55:in `rescue in load'
+E, [2021-10-14T14:31:56.479294 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/plugin.rb:33:in `load'
+E, [2021-10-14T14:31:56.479306 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/driver.rb:37:in `for_plugin'
+E, [2021-10-14T14:31:56.479318 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:235:in `new_driver'
+E, [2021-10-14T14:31:56.479330 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:250:in `new_instance'
+E, [2021-10-14T14:31:56.479342 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:143:in `block in build_instances'
+E, [2021-10-14T14:31:56.479353 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:142:in `map'
+E, [2021-10-14T14:31:56.479365 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:142:in `with_index'
+E, [2021-10-14T14:31:56.479377 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:142:in `build_instances'
+E, [2021-10-14T14:31:56.479389 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/config.rb:116:in `instances'
+E, [2021-10-14T14:31:56.479401 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/command.rb:109:in `filtered_instances'
+E, [2021-10-14T14:31:56.479413 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/command.rb:139:in `parse_subcommand'
+E, [2021-10-14T14:31:56.479425 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/command/list.rb:29:in `call'
+E, [2021-10-14T14:31:56.479436 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/cli.rb:52:in `perform'
+E, [2021-10-14T14:31:56.479448 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/cli.rb:120:in `list'
+E, [2021-10-14T14:31:56.479460 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/thor-1.1.0/lib/thor/command.rb:27:in `run'
+E, [2021-10-14T14:31:56.479471 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/thor-1.1.0/lib/thor/invocation.rb:127:in `invoke_command'
+E, [2021-10-14T14:31:56.479483 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/thor-1.1.0/lib/thor.rb:392:in `dispatch'
+E, [2021-10-14T14:31:56.479495 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/thor-1.1.0/lib/thor/base.rb:485:in `start'
+E, [2021-10-14T14:31:56.479517 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/bin/kitchen:11:in `block in <top (required)>'
+E, [2021-10-14T14:31:56.479530 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/lib/kitchen/errors.rb:170:in `with_friendly_errors'
+E, [2021-10-14T14:31:56.479542 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/gems/test-kitchen-2.12.0/bin/kitchen:11:in `<top (required)>'
+E, [2021-10-14T14:31:56.479554 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/bin/kitchen:25:in `load'
+E, [2021-10-14T14:31:56.479566 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/bin/kitchen:25:in `<main>'
+E, [2021-10-14T14:31:56.479577 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/bin/ruby_executable_hooks:22:in `eval'
+E, [2021-10-14T14:31:56.479589 #68597] ERROR -- Kitchen: /Users/ayujain5/.rvm/gems/ruby-2.7.1/bin/ruby_executable_hooks:22:in `<main>'
+E, [2021-10-14T14:31:56.479601 #68597] ERROR -- Kitchen: ----End Backtrace-----
