@@ -1,5 +1,5 @@
 *.terraform*
-*.kitchen
+.kitchen/*
 Gemfile.lock
 *terraform.tfstate*
 *.DS_Store

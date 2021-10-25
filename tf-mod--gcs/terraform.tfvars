@@ -1,4 +1,4 @@
 project       = "ide-ccoe"
-name          = "gcs-terraform-xx"
+name          = "test-tf-state-upgradee"
 location      = "US"
 storage_class = "ARCHIVE"
