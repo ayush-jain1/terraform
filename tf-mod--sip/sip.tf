@@ -8,3 +8,6 @@ module "sip" {
   host_project  = var.host_project
   environment   = var.environment
 }
+
+//To migrate from inline to module and prevent resource destruction, use command
+//terraform state mv google_compute_address.static_ip module.sip.google_compute_address.static_ip
